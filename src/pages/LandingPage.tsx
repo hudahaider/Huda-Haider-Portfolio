@@ -8,7 +8,7 @@ import Skills from "./Skills";
 
 const LandingPage = () => {
   const bgStyle = {
-    backgroundImage: "url(src/assets/bg.jpg)",
+    // backgroundImage: "url(src/assets/bg.jpg)",
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -17,7 +17,7 @@ const LandingPage = () => {
     width: "100%",
   };
   return (
-    <div style={bgStyle}>
+    <div className="bg-slate-950" style={bgStyle}>
       <HeaderSection/>
       <HeroSection />
       <Work />
