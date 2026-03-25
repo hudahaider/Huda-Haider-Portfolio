@@ -10,7 +10,7 @@ const Projects = () => {
           <div className="flex gap-4 p-6 flex-col md:flex-row bg-slate-600/20">
             <div>
               <img
-                src="src\assets\dashboard.png"
+                src="/assets/dashboard.png"
                 alt="dashboard"
                 className="w-150 h-45 object-cover rounded-lg"
               />
@@ -35,7 +35,7 @@ const Projects = () => {
           <div className="flex gap-4 p-6 shadow-2xl flex-col md:flex-row bg-slate-600/20">
             <div className="">
               <img
-                src="src\assets\portrait.jpg"
+                src="/assets/portrait.jpg"
                 alt="portrait"
                 className="w-150 h-45 object-cover rounded-lg"
               />
@@ -62,7 +62,7 @@ const Projects = () => {
           <div className="flex gap-4 p-6 shadow-2xl flex-col md:flex-row bg-slate-600/20">
             <div>
               <img
-                src="src\assets\36days.jpg"
+                src="/assets/36days.jpg"
                 alt="36days"
                 className="w-155 h-45 object-cover rounded-lg"
               />

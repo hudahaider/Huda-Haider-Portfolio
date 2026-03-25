@@ -8,7 +8,7 @@ import Skills from "./Skills";
 
 const LandingPage = () => {
   const bgStyle = {
-    // backgroundImage: "url(src/assets/bg.jpg)",
+    backgroundImage: "url(/assets/bg.jpg)",
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
