@@ -7,6 +7,7 @@ import {
   SiNodedotjs,
 } from "react-icons/si";
 
+
 const skills = [
   {
     icon: <SiJavascript className="text-yellow-400" />,

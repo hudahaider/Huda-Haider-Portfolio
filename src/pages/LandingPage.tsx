@@ -1,10 +1,10 @@
 import HeroSection from "../components/HeroSection";
 import FooterSection from "../components/FooterSection";
 import Contact from "./Contact";
-import Skills from "./Skills";
 import Projects from "./Projects";
 import Work from "./Work";
 import HeaderSection from "../components/HeaderSection";
+import Skills from "./Skills";
 
 const LandingPage = () => {
   const bgStyle = {

@@ -16,7 +16,7 @@ const HeroSection = () => {
             dolorem, laborum dolore, deleniti nesciunt odio tenetur.
           </p>
 
-          <Link to="/contact">  
+          <Link to="/Noor ul Huda Haider-resume.pdf" target="_blank" download="Huda_Haider_Resume.pdf">  
             <button className="text-white font-semibold px-7 py-2 bg-red-500 hover:bg-red-700">
               Download Resume
             </button>
