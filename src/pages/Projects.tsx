@@ -7,7 +7,8 @@ const Projects = () => {
         {/* Grid */}
         <div className="grid grid-cols-1 gap-8">
           {/* Card 1 */}
-          <div className="flex gap-4 p-6 flex-col md:flex-row bg-slate-600/20">
+          <div className="flex gap-4 p-6 flex-col md:flex-row bg-slate-600/20 overflow-hidden
+  transition-all duration-500 ease-in-out hover:translate-x-3 hover:-translate-y-1 hover:shadow-2xl hover:bg-slate-600/30">
             <div>
               <img
                 src="/assets/dashboard.png"
@@ -32,7 +33,7 @@ const Projects = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="flex gap-4 p-6 shadow-2xl flex-col md:flex-row bg-slate-600/20">
+          <div className="flex gap-4 p-6 shadow-2xl flex-col md:flex-row bg-slate-600/20 overflow-hidden transition-all duration-500 ease-in-out hover:translate-x-3 hover:-translate-y-1 hover:shadow-2xl hover:bg-slate-600/30">
             <div className="">
               <img
                 src="/assets/portrait.jpg"
@@ -59,7 +60,7 @@ const Projects = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="flex gap-4 p-6 shadow-2xl flex-col md:flex-row bg-slate-600/20">
+          <div className="flex gap-4 p-6 shadow-2xl flex-col md:flex-row bg-slate-600/20 overflow-hidden transition-all duration-500 ease-in-out hover:translate-x-3 hover:-translate-y-1 hover:shadow-2xl hover:bg-slate-600/30">
             <div>
               <img
                 src="/assets/36days.jpg"

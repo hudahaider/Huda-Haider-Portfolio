@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
-    <div className="relative h-screen w-full flex justify-center items-center">
+    <div className="relative h-screen w-full flex justify-center items-center pt-65 md:pt-3">
       <div className="w-full flex gap-12 justify-center items-center flex-col-reverse lg:flex-row">
         {/* About content */}
         <div className="max-w-5xl px-4 *:text-white">
@@ -24,11 +24,11 @@ const HeroSection = () => {
         </div>
 
         {/* Profile pic */}
-        <div className="">
+        <div className="mt-5 flex justify-center lg:justify-start">
           <img
-            src="src\assets\profile.webp"
+            src="/assets/profile.png"
             alt="profile pic"
-            className="h-40 w-40 rounded-full object-cover"
+            className="h-32 w-32 sm:h-40 sm:w-40 md:h-48 md:w-48 lg:h-56 lg:w-56 rounded-full object-cover border-4 border-white shadow-lg"
           />
         </div>
       </div>

@@ -41,7 +41,7 @@ const HeaderSection = () => {
 
   return (
     <header className={`
-        fixed top-0 left-0 w-full py-4 px-16 z-100 bg-white/5 text-white 
+        fixed top-0 left-0 w-full py-4 px-16 z-100 md:bg-white/5 bg-slate-950 text-white 
         transition-transform duration-500 ease-in-out
         ${isVisible ? "translate-y-0" : "-translate-y-full"}
       `}>
