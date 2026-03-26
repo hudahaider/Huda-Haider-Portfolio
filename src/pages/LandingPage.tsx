@@ -5,6 +5,7 @@ import Projects from "./Projects";
 import Work from "./Work";
 import HeaderSection from "../components/HeaderSection";
 import Skills from "./Skills";
+import About from "./About";
 
 const LandingPage = () => {
   const bgStyle = {
@@ -20,6 +21,7 @@ const LandingPage = () => {
     <div className="bg-slate-950" style={bgStyle}>
       <HeaderSection/>
       <HeroSection />
+      <About/>
       <Work />
       <Skills />
       <Projects />

@@ -66,7 +66,7 @@ const icons = [
 
 const Skills = () => {
   return (
-    <section id="skills"  className="bg-slate-950 py-20 px-6 md:px-10">
+    <section id="skills"  className="py-20 px-6 md:px-10 bg-slate-900/10 border border-slate-600 rounded-3xl backdrop-blur-sm shadow-2xl max-w-5xl mx-auto">
   <h2 className="text-white text-4xl font-bold text-center mb-12">
     Tech Stack 
   </h2>
@@ -75,7 +75,7 @@ const Skills = () => {
     {icons.map((skill, index) => (
       <div
         key={index}
-        className="relative group flex items-center justify-center 
+        className="relative group flex items-center justify-center
         w-14 h-14 md:w-16 md:h-16
         rounded-2xl bg-slate-800/40 overflow-hidden
         transition-all duration-500 ease-in-out
