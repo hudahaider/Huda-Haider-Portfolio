@@ -1,19 +1,18 @@
 const Projects = () => {
   return (
-    <div id="projects" className="w-full py-15 md:py-10 ">
-      <div className="max-w-5xl mx-auto px-4 *:text-white">
-        <h6 className="text-3xl font-medium mb-8">Projects</h6>
+    <div id="projects" className="w-full py-20 md:py-10 ">
+      <div className="max-w-5xl mx-auto px-6 *:text-white">
+        <h6 className="text-5xl font-bold mb-8">Projects</h6>
 
         {/* Grid */}
         <div className="grid grid-cols-1 gap-8">
           {/* Card 1 */}
-          <div className="flex gap-4 p-6 flex-col md:flex-row bg-slate-600/20 overflow-hidden
-  transition-all duration-500 ease-in-out hover:translate-x-3 hover:-translate-y-1 hover:shadow-2xl hover:bg-slate-600/30">
+          <div className="flex gap-4 p-6 flex-col md:flex-row bg-slate-600/20 overflow-hidden duration-500 ease-in-out hover:shadow-2xl hover:bg-slate-600/30">
             <div>
               <img
                 src="/assets/dashboard.png"
                 alt="dashboard"
-                className="w-150 h-45 object-cover rounded-lg"
+                className="w-150 h-45 object-cover rounded-lg transition-all duration-500 ease-in-out transform hover:-translate-y-3 hover:shadow-2xl hover:bg-slate-600/30"
               />
             </div>
             <div>
@@ -33,12 +32,12 @@ const Projects = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="flex gap-4 p-6 shadow-2xl flex-col md:flex-row bg-slate-600/20 overflow-hidden transition-all duration-500 ease-in-out hover:translate-x-3 hover:-translate-y-1 hover:shadow-2xl hover:bg-slate-600/30">
+          <div className="flex gap-4 p-6 shadow-2xl flex-col md:flex-row bg-slate-600/20 overflow-hidden duration-500 ease-in-out hover:shadow-2xl hover:bg-slate-600/30">
             <div className="">
               <img
                 src="/assets/portrait.jpg"
                 alt="portrait"
-                className="w-150 h-45 object-cover rounded-lg"
+                className="w-150 h-45 object-cover rounded-lg transition-all duration-500 ease-in-out transform hover:-translate-y-3 hover:shadow-2xl hover:bg-slate-600/30"
               />
             </div>
             <div>
@@ -60,12 +59,12 @@ const Projects = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="flex gap-4 p-6 shadow-2xl flex-col md:flex-row bg-slate-600/20 overflow-hidden transition-all duration-500 ease-in-out hover:translate-x-3 hover:-translate-y-1 hover:shadow-2xl hover:bg-slate-600/30">
+          <div className="flex gap-4 p-6 shadow-2xl flex-col md:flex-row bg-slate-600/20 overflow-hidden duration-500 ease-in-out hover:shadow-2xl hover:bg-slate-600/30">
             <div>
               <img
                 src="/assets/36days.jpg"
                 alt="36days"
-                className="w-155 h-45 object-cover rounded-lg"
+                className="w-155 h-45 object-cover rounded-lg transition-all duration-500 ease-in-out transform hover:-translate-y-3 hover:shadow-2xl hover:bg-slate-600/30"
               />
             </div>
             <div>

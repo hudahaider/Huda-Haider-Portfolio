@@ -5,19 +5,26 @@ const HeroSection = () => {
     <div className="relative h-screen w-full flex justify-center items-center pt-65 md:pt-15 lg:pt-3">
       <div className="w-full flex gap-12 justify-center items-center flex-col-reverse lg:flex-row">
         {/* Hero content */}
-        <div className="max-w-5xl px-4 *:text-white">
+        <div className="max-w-5xl px-6 *:text-white">
           <h1 className="text-4xl font-bold leading-tight mb-6">
             Hi, I am Huda, <br /> Web Developer
           </h1>
 
           <p className=" text-lg max-w-2xl mx-auto mb-16 leading-relaxed">
-            I specialize in building high-performance web applications with 
-          <span className="text-white font-medium"> React & Tailwind CSS</span>. 
-          I turn complex problems into elegant, user-friendly digital experiences 
-          that help brands grow.
+            I specialize in building high-performance web applications with
+            <span className="text-white font-medium">
+              {" "}
+              React & Tailwind CSS
+            </span>
+            . I turn complex problems into elegant, user-friendly digital
+            experiences that help brands grow.
           </p>
 
-          <Link to="/Noor ul Huda Haider-resume.pdf" target="_blank" download="Huda_Haider_Resume.pdf">  
+          <Link
+            to="/Noor ul Huda Haider-resume.pdf"
+            target="_blank"
+            download="Huda_Haider_Resume.pdf"
+          >
             <button className="text-white font-semibold px-7 py-2 bg-red-500 hover:bg-red-700">
               Download Resume
             </button>

@@ -1,8 +1,8 @@
 const Work = () => {
   return (
-    <div id="work" className="w-full py-15 md:py-10">
-      <div className="max-w-5xl mx-auto px-4 *:text-white">
-        <h6 className="text-3xl font-medium mb-8">Work Experience</h6>
+    <div id="work" className="w-full py-20 md:py-10">
+      <div className="max-w-5xl mx-auto px-6 *:text-white">
+        <h6 className="text-5xl font-bold mb-8">Work Experience</h6>
 
         {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -17,6 +17,9 @@ const HeaderSection = () => {
   const handleProjectsClick = () => {
     document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
   };
+  const handleFAQsClick = () => {
+    document.getElementById("FAQs")?.scrollIntoView({ behavior: "smooth" });
+  };
   const handleContactClick = () => {
     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
   };
@@ -35,16 +38,18 @@ const HeaderSection = () => {
       setLastScrollY(window.scrollY);
     };
 
-    window.addEventListener('scroll', controlNavbar);
-    return () => window.removeEventListener('scroll', controlNavbar);
+    window.addEventListener("scroll", controlNavbar);
+    return () => window.removeEventListener("scroll", controlNavbar);
   }, [lastScrollY]);
 
   return (
-    <header className={`
+    <header
+      className={`
         fixed top-0 left-0 w-full py-4 px-16 z-100 md:bg-white/5 bg-slate-950 text-white 
         transition-transform duration-500 ease-in-out
         ${isVisible ? "translate-y-0" : "-translate-y-full"}
-      `}>
+      `}
+    >
       {/* Visible only on small screens */}
       <div className="flex justify-end">
         <button
@@ -69,6 +74,9 @@ const HeaderSection = () => {
         </Link>
         <Link to="" onClick={handleProjectsClick}>
           Projects
+        </Link>
+        <Link to="" onClick={handleFAQsClick}>
+          FAQs
         </Link>
         <Link to="" onClick={handleContactClick}>
           Contact

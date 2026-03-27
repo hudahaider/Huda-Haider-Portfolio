@@ -4,18 +4,21 @@ const Contact = () => {
   return (
     <div id="contact" className="w-full py-20 max-w-6xl mx-auto px-6">
       <div className="mb-12">
-        <h2 className="text-4xl font-bold text-white mb-2">Get in Touch</h2>
+        <h2 className="text-5xl font-bold text-white mb-2">Get in Touch</h2>
         <div className="h-1 w-55 bg-cyan-500 rounded-full"></div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 bg-slate-900/50 border border-slate-800 p-8 md:p-12 rounded-3xl backdrop-blur-sm shadow-2xl">
-        
         {/* Left Side: Info */}
         <div className="lg:col-span-2 space-y-8">
           <div>
-            <h3 className="text-2xl font-semibold text-white mb-4">Let's collaborate</h3>
+            <h3 className="text-2xl font-semibold text-white mb-4">
+              Let's collaborate
+            </h3>
             <p className="text-slate-400 leading-relaxed">
-              I'm currently open to new opportunities and projects. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+              I'm currently open to new opportunities and projects. Whether you
+              have a question or just want to say hi, I'll try my best to get
+              back to you!
             </p>
           </div>
 
@@ -25,8 +28,13 @@ const Contact = () => {
                 <Mail className="text-cyan-500" size={24} />
               </div>
               <div>
-                <p className="text-sm text-slate-500 uppercase tracking-wider font-bold">Email</p>
-                <a href="mailto:hudahaider303@gmail.com" className="text-slate-200 hover:text-cyan-400 transition-colors">
+                <p className="text-sm text-slate-500 uppercase tracking-wider font-bold">
+                  Email
+                </p>
+                <a
+                  href="mailto:hudahaider303@gmail.com"
+                  className="text-slate-200 hover:text-cyan-400 transition-colors break-all sm:break-normal block"
+                >
                   hudahaider303@gmail.com
                 </a>
               </div>
@@ -37,7 +45,9 @@ const Contact = () => {
                 <Phone className="text-cyan-500" size={24} />
               </div>
               <div>
-                <p className="text-sm text-slate-500 uppercase tracking-wider font-bold">Phone</p>
+                <p className="text-sm text-slate-500 uppercase tracking-wider font-bold">
+                  Phone
+                </p>
                 <p className="text-slate-200">+92 XXX XXXXXXX</p>
               </div>
             </div>
@@ -49,7 +59,9 @@ const Contact = () => {
           <form className="space-y-5">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               <div className="space-y-2">
-                <label className="text-sm font-medium text-slate-300 ml-1 mb-5">Name</label>
+                <label className="text-sm font-medium text-slate-300 ml-1 mb-5">
+                  Name
+                </label>
                 <input
                   type="text"
                   placeholder="Enter name"
@@ -57,7 +69,9 @@ const Contact = () => {
                 />
               </div>
               <div className="space-y-2">
-                <label className="text-sm font-medium text-slate-300 ml-1 mb-5">Email</label>
+                <label className="text-sm font-medium text-slate-300 ml-1 mb-5">
+                  Email
+                </label>
                 <input
                   type="email"
                   placeholder="name@example.com"
@@ -67,7 +81,9 @@ const Contact = () => {
             </div>
 
             <div className="space-y-2">
-              <label className="text-sm font-medium text-slate-300 ml-1 mb-5">Message</label>
+              <label className="text-sm font-medium text-slate-300 ml-1 mb-5">
+                Message
+              </label>
               <textarea
                 placeholder="Tell me about your project..."
                 rows={4}
