@@ -1,30 +1,27 @@
 import {
+  SiHtml5,
+  SiCss,
   SiJavascript,
   SiTypescript,
-  SiPython,
   SiReact,
   SiTailwindcss,
   SiNodedotjs,
+  SiMaterialdesign,
+  SiShadcnui,
+  SiPython,
+  SiGit,
+  SiGithub,
+  SiFigma,
+  SiVite,
+  SiNpm,
 } from "react-icons/si";
 
 const icons = [
   {
-    icon: <SiJavascript className="text-yellow-400" />,
+    icon: <SiHtml5 className="text-orange-600" />,
   },
   {
-    icon: <SiTypescript className="text-blue-500" />,
-  },
-  {
-    icon: <SiPython className="text-blue-400" />,
-  },
-  {
-    icon: <SiReact className="text-cyan-400" />,
-  },
-  {
-    icon: <SiTailwindcss className="text-sky-400" />,
-  },
-  {
-    icon: <SiNodedotjs className="text-green-500" />,
+    icon: <SiCss className="text-blue-600" />,
   },
   {
     icon: <SiJavascript className="text-yellow-400" />,
@@ -33,34 +30,37 @@ const icons = [
     icon: <SiTypescript className="text-blue-500" />,
   },
   {
-    icon: <SiPython className="text-blue-400" />,
-  },
-  {
     icon: <SiReact className="text-cyan-400" />,
   },
   {
     icon: <SiTailwindcss className="text-sky-400" />,
   },
   {
-    icon: <SiNodedotjs className="text-green-500" />,
+    icon: <SiNodedotjs className="text-green-600" />,
   },
   {
-    icon: <SiJavascript className="text-yellow-400" />,
+    icon: <SiShadcnui className="text-white" />,
   },
   {
-    icon: <SiTypescript className="text-blue-500" />,
+    icon: <SiMaterialdesign className="text-blue-500" />,
   },
   {
-    icon: <SiPython className="text-blue-400" />,
+    icon: <SiPython className="text-yellow-500" />,
   },
   {
-    icon: <SiReact className="text-cyan-400" />,
+    icon: <SiGit className="text-orange-500" />,
   },
   {
-    icon: <SiTailwindcss className="text-sky-400" />,
+    icon: <SiGithub className="text-white" />,
   },
   {
-    icon: <SiNodedotjs className="text-green-500" />,
+    icon: <SiFigma className="text-pink-500" />,
+  },
+  {
+    icon: <SiVite className="text-purple-500" />,
+  },
+  {
+    icon: <SiNpm className="text-red-500" />,
   },
 ];
 

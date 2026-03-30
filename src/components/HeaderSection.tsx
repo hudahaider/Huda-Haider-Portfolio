@@ -5,23 +5,9 @@ import { Link } from "react-router-dom";
 const HeaderSection = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleAboutClick = () => {
-    document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
-  };
-  const handleWorkClick = () => {
-    document.getElementById("work")?.scrollIntoView({ behavior: "smooth" });
-  };
-  const handleSkillsClick = () => {
-    document.getElementById("skills")?.scrollIntoView({ behavior: "smooth" });
-  };
-  const handleProjectsClick = () => {
-    document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
-  };
-  const handleFAQsClick = () => {
-    document.getElementById("FAQs")?.scrollIntoView({ behavior: "smooth" });
-  };
-  const handleContactClick = () => {
-    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+  const scrollTo = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    setIsOpen(false);
   };
 
   const [isVisible, setIsVisible] = useState(true);
@@ -29,7 +15,6 @@ const HeaderSection = () => {
 
   useEffect(() => {
     const controlNavbar = () => {
-      // Hide if scrolling down, Show if scrolling up
       if (window.scrollY > lastScrollY && window.scrollY > 100) {
         setIsVisible(false);
       } else {
@@ -44,44 +29,96 @@ const HeaderSection = () => {
 
   return (
     <header
-      className={`
-        fixed top-0 left-0 w-full py-4 px-16 z-100 md:bg-white/5 bg-slate-950 text-white 
-        transition-transform duration-500 ease-in-out
-        ${isVisible ? "translate-y-0" : "-translate-y-full"}
-      `}
+      className={`fixed top-0 left-0 w-full z-50 px-6 md:px-16 py-4 bg-slate-950 md:bg-white/5 text-white transition-transform duration-500 ${
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      }`}
     >
-      {/* Visible only on small screens */}
-      <div className="flex justify-end">
+      <div className="flex items-center justify-between">
+        {/* Logo (hidden when menu open on small screens) */}
+        {!isOpen && (
+          <div className="italic text-xl md:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-linear-to-r from-cyan-600 via-blue-300 to-cyan-500">
+            HUDA HAIDER
+          </div>
+        )}
+
+        {/* Menu button */}
         <button
-          className="md:hidden text-3xl focus:outline-none text-white"
+          className="md:hidden text-white"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {isOpen ? <X /> : <Menu />}
+          {isOpen ? <X size={30} /> : <Menu size={30} />}
         </button>
+
+        {/* Desktop Menu */}
+        <div className="hidden md:flex gap-10 font-semibold text-white">
+          <Link
+            to=""
+            onClick={() => scrollTo("about")}
+            className="hover:text-cyan-500"
+          >
+            About
+          </Link>
+          <Link
+            to=""
+            onClick={() => scrollTo("work")}
+            className="hover:text-cyan-500"
+          >
+            Work
+          </Link>
+          <Link
+            to=""
+            onClick={() => scrollTo("skills")}
+            className="hover:text-cyan-500"
+          >
+            Skills
+          </Link>
+          <Link
+            to=""
+            onClick={() => scrollTo("projects")}
+            className="hover:text-cyan-500"
+          >
+            Projects
+          </Link>
+          <Link
+            to=""
+            onClick={() => scrollTo("FAQs")}
+            className="hover:text-cyan-500"
+          >
+            FAQs
+          </Link>
+          <Link
+            to=""
+            onClick={() => scrollTo("contact")}
+            className="hover:text-cyan-500"
+          >
+            Contact
+          </Link>
+        </div>
       </div>
 
-      <div
-        className={`${isOpen ? "flex" : "hidden"} md:flex flex-col md:flex-row flex-wrap gap-12 justify-end *:text-md *:text-white *:hover:text-cyan-600 font-semibold`}
-      >
-        <Link to="" onClick={handleAboutClick}>
-          About
-        </Link>
-        <Link to="" onClick={handleWorkClick}>
-          Work
-        </Link>
-        <Link to="" onClick={handleSkillsClick}>
-          Skills
-        </Link>
-        <Link to="" onClick={handleProjectsClick}>
-          Projects
-        </Link>
-        <Link to="" onClick={handleFAQsClick}>
-          FAQs
-        </Link>
-        <Link to="" onClick={handleContactClick}>
-          Contact
-        </Link>
-      </div>
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="md:hidden flex flex-col items-center justify-center gap-8 mt-8 text-lg font-semibold">
+          <Link to="" onClick={() => scrollTo("about")}>
+            About
+          </Link>
+          <Link to="" onClick={() => scrollTo("work")}>
+            Work
+          </Link>
+          <Link to="" onClick={() => scrollTo("skills")}>
+            Skills
+          </Link>
+          <Link to="" onClick={() => scrollTo("projects")}>
+            Projects
+          </Link>
+          <Link to="" onClick={() => scrollTo("FAQs")}>
+            FAQs
+          </Link>
+          <Link to="" onClick={() => scrollTo("contact")}>
+            Contact
+          </Link>
+        </div>
+      )}
     </header>
   );
 };
