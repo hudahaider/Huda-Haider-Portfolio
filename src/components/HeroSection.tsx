@@ -16,7 +16,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 md:px-16 pt-28 md:pt-32 overflow-hidden">
+    <section className="relative min-h-screen flex items-center py-16 justify-center px-6 md:px-16 pt-28 md:pt-32 overflow-hidden">
       {/* Background Gradient Blobs */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-cyan-500/20 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 right-10 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl"></div>
@@ -71,7 +71,7 @@ const HeroSection = () => {
         {/* Profile Section */}
         <div className="relative flex justify-center shrink-0">
           {/* Floating icons */}
-          <SiReact className="absolute -top-6 -left-6 text-cyan-400 text-3xl animate-bounce" />
+          <SiReact className="absolute top-0 left-0 text-cyan-400 text-3xl animate-bounce" />
           <SiJavascript className="absolute top-10 -right-8 text-yellow-400 text-3xl animate-bounce delay-200" />
           <SiTailwindcss className="absolute -bottom-6 left-6 text-sky-400 text-3xl animate-bounce delay-500" />
 
