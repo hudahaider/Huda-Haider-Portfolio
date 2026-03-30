@@ -7,7 +7,10 @@ import {
 
 export default function FAQSection() {
   return (
-    <div id="FAQs" className="py-20 px-6 md:px-10  text-white">
+    <div
+      id="FAQs"
+      className="md:py-20 py-10 px-6 md:px-10  text-white border-t border-gray-800"
+    >
       <div className="max-w-5xl mx-auto px-4 py-20 md:py-10">
         {/* heading */}
         <div className="space-y-15">

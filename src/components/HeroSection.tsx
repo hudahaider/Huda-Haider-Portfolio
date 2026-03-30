@@ -55,13 +55,13 @@ const HeroSection = () => {
               target="_blank"
               download="Noor_ul_Huda_Haider_Resume.pdf"
             >
-              <button className="px-8 py-3 bg-cyan-500 hover:bg-cyan-600 rounded-lg font-semibold transition duration-300 w-full sm:w-auto">
+              <button className="px-8 py-3 bg-cyan-600 hover:bg-cyan-400 rounded-lg font-semibold text-lg transition duration-300 w-full sm:w-auto">
                 Download Resume
               </button>
             </Link>
 
             <Link to="" onClick={handleContactClick}>
-              <button className="px-8 py-3 border border-cyan-400 hover:bg-cyan-400 hover:text-black rounded-lg font-semibold transition duration-300 w-full sm:w-auto">
+              <button className="px-8 py-3 border border-cyan-400 hover:bg-cyan-400 hover:text-black rounded-lg font-semibold text-lg transition duration-300 w-full sm:w-auto">
                 Contact Me
               </button>
             </Link>

@@ -15,7 +15,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="bg-slate-950 border-t border-gray-900 text-white py-10 md:py-20"
+      className="bg-slate-950/50 border-t border-gray-900 text-white py-10 md:py-20"
     >
       <div className="max-w-5xl mx-auto px-6">
         {/* Heading */}
