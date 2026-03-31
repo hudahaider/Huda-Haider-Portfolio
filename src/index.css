@@ -128,3 +128,9 @@
     @apply font-sans;
     }
 }
+/* Forces the swiper to move at a constant, linear speed */
+.skills-swiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+  /* Optional: keeps the transition consistent when restarting from hover */
+  -webkit-transition-timing-function: linear !important;
+}

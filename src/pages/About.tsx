@@ -17,7 +17,7 @@ const About = () => {
       id="about"
       className="bg-slate-950/50 border-t border-gray-900 text-white py-10 md:py-20"
     >
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
         {/* Heading */}
         <div className="flex items-center gap-4 mb-12">
           <h2 className="text-5xl font-bold">About Me</h2>
@@ -45,19 +45,19 @@ const About = () => {
             {/* Buttons */}
             <div className="flex gap-4 pt-4 flex-wrap">
               <Link to="" onClick={handleWorkClick}>
-                <button className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full font-bold transition-all transform hover:-translate-y-1">
+                <button className="bg-cyan-600 hover:bg-cyan-700 px-5 py-2 rounded-full font-bold transition-all transform hover:-translate-y-1">
                   View My Work
                 </button>
               </Link>
 
               <Link to="" onClick={handleProjectsClick}>
-                <button className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full font-bold transition-all transform hover:-translate-y-1">
+                <button className="bg-cyan-600 hover:bg-cyan-700 px-5 py-2 rounded-full font-bold transition-all transform hover:-translate-y-1">
                   View My Projects
                 </button>
               </Link>
 
               <Link to="" onClick={handleContactClick}>
-                <button className="border border-slate-700 hover:bg-slate-800 px-6 py-3 rounded-full font-bold transition-all">
+                <button className="border border-slate-700 hover:bg-slate-600 px-5 py-2 rounded-full font-bold transition-all">
                   Get In Touch
                 </button>
               </Link>

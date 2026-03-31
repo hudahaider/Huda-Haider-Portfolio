@@ -55,7 +55,7 @@ const HeroSection = () => {
               target="_blank"
               download="Noor_ul_Huda_Haider_Resume.pdf"
             >
-              <button className="px-8 py-3 bg-cyan-600 hover:bg-cyan-400 rounded-lg font-semibold text-lg transition duration-300 w-full sm:w-auto">
+              <button className="px-8 py-3 bg-cyan-600 hover:bg-cyan-700 rounded-lg font-semibold text-lg transition duration-300 w-full sm:w-auto">
                 Download Resume
               </button>
             </Link>

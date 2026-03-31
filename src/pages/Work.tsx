@@ -1,7 +1,7 @@
 const Work = () => {
   return (
     <div id="work" className="w-full border-t border-gray-800 md:py-20 py-10">
-      <div className="max-w-5xl mx-auto px-6 text-white">
+      <div className="max-w-6xl mx-auto px-6 text-white">
         <h6 className="text-5xl font-bold mb-12">Work Experience</h6>
 
         {/* Grid */}
