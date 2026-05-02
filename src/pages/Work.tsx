@@ -9,10 +9,10 @@ const Work = () => {
           {/* Nexura Tech */}
           <div className="bg-cyan-500/10 backdrop-blur-md p-6 rounded-2xl shadow-lg shadow-cyan-400/20 transition-all duration-300 hover:-translate-y-2 hover:shadow-cyan-500/70">
             <h1 className="text-2xl font-bold mb-4">
-              Nexura Tech — Frontend Intern
+              Nexura Tech — Frontend Web Developer Intern
             </h1>
             <h3 className="text-slate-300 text-md mb-4">
-              March 2026 – Present
+              January 2026 – Present
             </h3>
             <p className="text-slate-300 leading-relaxed">
               Currently working as a PSEB intern, focusing on modern frontend
@@ -36,7 +36,7 @@ const Work = () => {
           {/* I Tech Solution */}
           <div className="bg-cyan-500/10 backdrop-blur-md p-6 rounded-2xl shadow-lg shadow-cyan-400/20 transition-all duration-300 hover:-translate-y-2 hover:shadow-cyan-500/70">
             <h1 className="text-2xl font-bold mb-4">
-              I Tech Solution — Frontend Intern
+              I Tech Solution — Intern
             </h1>
             <h3 className="text-slate-300 text-md mb-4">
               July 2025 – Sep 2025

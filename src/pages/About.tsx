@@ -27,8 +27,8 @@ const About = () => {
           {/* Left side - content */}
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold text-slate-200">
-              I'm a Web Developer passionate about clean code and user-centric
-              design.
+              I'm a Frontend Web Developer passionate about clean code and
+              user-centric design.
             </h3>
             <p className="text-gray-400 leading-relaxed">
               My journey into web development started when I realized I could
@@ -69,7 +69,7 @@ const About = () => {
             {/* Card 1 */}
             <div className="bg-slate-800/50 p-8 rounded-3xl border border-slate-700 hover:border-blue-500/50 transition-colors group text-center">
               <FaCode className="text-3xl text-blue-500 mx-auto mb-4 group-hover:scale-110 transition-transform" />
-              <h4 className="text-2xl font-bold italic">2+</h4>
+              <h4 className="text-2xl font-bold italic">1+</h4>
               <p className="text-gray-500 text-sm uppercase tracking-widest mt-1">
                 Years Coding
               </p>
@@ -78,7 +78,7 @@ const About = () => {
             {/* Card 2 */}
             <div className="bg-slate-800/50 p-8 rounded-3xl border border-slate-700 hover:border-blue-500/50 transition-colors group text-center">
               <FaLightbulb className="text-3xl text-yellow-400 mx-auto mb-4 group-hover:scale-110 transition-transform" />
-              <h4 className="text-2xl font-bold italic">15+</h4>
+              <h4 className="text-2xl font-bold italic">3+</h4>
               <p className="text-gray-500 text-sm uppercase tracking-widest mt-1">
                 Projects Done
               </p>

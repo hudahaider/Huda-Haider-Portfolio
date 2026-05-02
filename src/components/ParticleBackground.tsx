@@ -50,7 +50,7 @@ const ParticleBackground = () => {
           enable: true,
           outModes: { default: OutMode.out },
           random: false,
-          speed: 4,
+          speed: 2,
           straight: false,
         },
         number: { density: { enable: true }, value: 80 },

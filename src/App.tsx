@@ -1,5 +1,6 @@
 import LandingPage from "./pages/LandingPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
       </Routes>
+      <Toaster position="top-center" />
     </BrowserRouter>
   );
 }

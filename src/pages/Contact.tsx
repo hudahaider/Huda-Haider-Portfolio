@@ -1,6 +1,33 @@
 import { Mail, Phone, Send } from "lucide-react";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 const Contact = () => {
+  const form = useRef<HTMLFormElement | null>(null);
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (!form.current) return;
+
+    emailjs
+      .sendForm(
+        "service_dfqbawb",
+        "template_q4j3k6v",
+        form.current,
+        "PYL0PYKm9n_R3C2Os",
+      )
+      .then(() => {
+        toast.success("Message sent successfully!");
+        form.current?.reset();
+      })
+      .catch((error) => {
+        console.log(error);
+        toast.error("Failed to send message");
+      });
+  };
+
   return (
     <div className="md:py-20 py-10  border-t border-gray-800">
       <div id="contact" className="w-full max-w-6xl mx-auto px-6">
@@ -58,13 +85,14 @@ const Contact = () => {
 
           {/* Right Side: Form */}
           <div className="lg:col-span-3 bg-slate-800/40 p-6 md:p-8 rounded-2xl border border-slate-700/50">
-            <form className="space-y-5">
+            <form ref={form} onSubmit={sendEmail} className="space-y-5">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-slate-300 ml-1 mb-5">
                     Name
                   </label>
                   <input
+                    name="user_name"
                     type="text"
                     placeholder="Enter name"
                     className="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-500 transition-all"
@@ -75,6 +103,7 @@ const Contact = () => {
                     Email
                   </label>
                   <input
+                    name="user_email"
                     type="email"
                     placeholder="name@example.com"
                     className="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-500 transition-all"
@@ -87,13 +116,17 @@ const Contact = () => {
                   Message
                 </label>
                 <textarea
-                  placeholder="Tell me about your project..."
+                  name="message"
+                  placeholder="Write your message..."
                   rows={4}
                   className="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-500 transition-all resize-none"
                 />
               </div>
 
-              <button className="w-full md:w-auto flex items-center justify-center gap-2 bg-cyan-600 hover:bg-cyan-500 text-white font-semibold py-3 px-10 rounded-xl transition-all active:scale-95 shadow-lg shadow-cyan-900/20">
+              <button
+                type="submit"
+                className="w-full md:w-auto flex items-center justify-center gap-2 bg-cyan-600 hover:bg-cyan-500 text-white font-semibold py-3 px-10 rounded-xl transition-all active:scale-95 shadow-lg shadow-cyan-900/20"
+              >
                 Send Message <Send size={18} />
               </button>
             </form>

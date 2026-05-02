@@ -9,7 +9,8 @@
     "skipLibCheck": true,
     
     /* ADD THESE TWO LINES */
-    "baseUrl": ".",
+     "ignoreDeprecations": "6.0",
+    "baseUrl": "./",
     "paths": {
       "@/*": ["./src/*"]
     },
