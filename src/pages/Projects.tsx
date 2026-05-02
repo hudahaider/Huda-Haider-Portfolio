@@ -49,7 +49,7 @@ const Projects = () => {
             {/* Image */}
             <div className="md:w-1/3 w-full">
               <img
-                src="public\assets\portfolio.png"
+                src="/assets/portfolio.png"
                 alt="portfolio"
                 className="w-full h-56 object-cover rounded-lg transition-transform duration-500 hover:-translate-y-2"
               />
