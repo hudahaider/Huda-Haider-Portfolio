@@ -51,9 +51,9 @@ const HeroSection = () => {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <Link
-              to="/Noor ul Huda Haider-resume.pdf"
+              to="/Noor-ul-huda-haider-Resume.pdf"
               target="_blank"
-              download="Noor_ul_Huda_Haider_Resume.pdf"
+              download="Noor-ul-huda-haider-Resume.pdf"
             >
               <button className="px-8 py-3 bg-cyan-600 hover:bg-cyan-700 rounded-lg font-semibold text-lg transition duration-300 w-full sm:w-auto">
                 Download Resume

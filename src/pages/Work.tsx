@@ -11,9 +11,7 @@ const Work = () => {
             <h1 className="text-2xl font-bold mb-4">
               Nexura Tech — Frontend Web Developer Intern
             </h1>
-            <h3 className="text-slate-300 text-md mb-4">
-              January 2026 – Present
-            </h3>
+            <h3 className="text-slate-300 text-md mb-4">Jan 2026 – Present</h3>
             <p className="text-slate-300 leading-relaxed">
               Currently working as a PSEB intern, focusing on modern frontend
               development using React and Tailwind CSS. Building responsive UI
